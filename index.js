@@ -1,16 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     function initSlider(selector) {
-        var slideTimer = null;
+        let slideTimer = null;
 
         let currentSlideIndex = 0;
-        var slider = document.querySelector(selector);
-        var slides = slider.querySelectorAll(".slide");
+        let slider = document.querySelector(selector);
+        let slides = slider.querySelectorAll(".slide");
 
-        var slidesWrap = document.createElement("div");
+        let slidesWrap = document.createElement("div");
         slidesWrap.classList.add("slides_wrap");
 
-        var slidesNav = document.createElement("div");
+        let slidesNav = document.createElement("div");
         slidesNav.classList.add("slides_nav");
 
         slider.innerHTML = null;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         slider.appendChild(slidesNav);
 
         for (let i = 0; i < slides.length; i++) {
-            var pointer = document.createElement("div");
+            let pointer = document.createElement("div");
             pointer.classList.add("slides_nav_pointer");
             pointer.addEventListener("click", function() {
                 slideTo(i);
@@ -27,25 +27,25 @@ document.addEventListener("DOMContentLoaded", function() {
             slidesNav.appendChild(pointer);
         }
 
-        var getSlide = function(index) {
+        let getSlide = function(index) {
             return slides[getSlideIndex(index)];
         }
 
-        var getSlideIndex = function(index) {
+        let getSlideIndex = function(index) {
             if (index < 0) return slides.length - 1;
             if (index > slides.length - 1) return 0;
             return index;
         }
 
-        var planSlideNext = function() {
+        let planSlideNext = function() {
             slideTimer = window.setTimeout(slideToNext, 2000);
         }
 
-        var slideToNext = function() {
+        let slideToNext = function() {
             slideTo(getSlideIndex(currentSlideIndex + 1));
         }
 
-        var slideTo = function(index) {
+        let slideTo = function(index) {
             slidesWrap.innerHTML = null;
 
             for (let i = 0; i < slides.length; i++) {
@@ -73,11 +73,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     initSlider("#mainSlider");
 });
-
-
-
-
-
-
-
-
