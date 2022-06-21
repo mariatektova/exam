@@ -1017,6 +1017,12 @@ dd{
 
 /*Gallery*/
 
+.gallery_title{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: #8081BD;
+}
 
 .container{
 display: flex;
