@@ -34,25 +34,25 @@
 			</div>
 	</header>
 
-	<main class="layout_main">
-		<div class="main_container">
+	<div class="layout_main">
 			<div class="main_adv">
 				<dl class="main_adv__inf">
 					<dt class="main_adv__title">Kidsstory</dt>
 						<dd class="main_adv__subtitle">Английский детский<br>
 							сади&nbsp;клуб</dd>
 				</dl>
-		<form class="main_adv__form">
+		<form class="main_adv__form" action="#" method="get">
 			<h1 class="adv_form__title">Запишитесь на&nbsp;персональную экскурсию</h1>
 				<p class="adv_form_subtitle">Заполните форму и&nbsp;посмотрите детский сад вживую в&nbsp;удобное для вас время</p>
-					<input class="form_input adv_form__name" type="text" placeholder="Ваше имя"></input>
-					<input class="form_input adv_form__phone" type="tel" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _"></input>
-					<input class="form_input adv_form__email" type="email" placeholder="email"></input>
+					<input class="form_input adv_form__name" name="name" type="text" placeholder="Ваше имя" required></input>
+					<input class="form_input adv_form__phone" name="phone" type="tel" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _" required></input>
+					<input class="form_input adv_form__email" name="email" type="email" placeholder="email" required></input>
 					<button class="adv_form__button">записаться</button>
 		</form>
 			</div>
 		</div>
-	</main>
+	</div>
+	</div>
 
 	<div class="layout_info">
 		<div class="layout_container">
@@ -69,22 +69,24 @@
 		</div>
 	</div>
 
+<div class ="layout_consult__before">
 	<div class="layout_consult">
 		<div class="consult_container">
 			<div class="consult_info">
 				<h4 class="consult_info__title">Есть вопросы? Получите бесплатную консультацию</h4>
 					<p class="consult_info__subtitle">Оставьте телефон и&nbsp;мы&nbsp;перезвоним и&nbsp;расскажем все подробности о&nbsp;филиале</p>
 			</div>
-			<div class="consult_input">
-				<input class="consult_input__phone" type="tel" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _"></input>
-				<button class="consult_input__button">отправить</button>
-			</div>
-		</div>
-	</div>
 
+				<form class = "consult_form" name="phone" type="tel" required>
+					<input class="consult_input__phone" type="tel" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _"></input>
+					<button class="consult_input__button">отправить</button>
+				</form>
+			</div>
+	</div>
+</div>
 <div class="layout_services">
 		<div class="layout_container">
-			<h5 class="services_title">Дополнительные услуги</h5>
+			<h1 class="services_title">Дополнительные услуги</h1>
 			<ul class="services_grids">
 				<li class="services_grid yoga">Йога</li>
 				<li class="services_grid wood">Монтессори группа с&nbsp;уникальным <br>древесинным оборудованием</li>
@@ -145,10 +147,115 @@
 				</ul>
 		</div>
 </div>
+<div class = "command_slider">
+		<div class="layout_container">
+			<h1 class="command_title">Наша команда</h1>
+				<div class="teamSlider">
+					<div class="slider_container">
+						<div class="slider_image slider_image_1"></div>
+							<div class="slider_description">
+								<p class="surname">Deadpool</p>
+								<p class="name">Wade</p>
+								<p class="second_name">Willson</p>
+								<p class="role">killer</p>
+								<p class="experience">Experience:15 years</p>
+							</div>
+					</div>
 
+	<div class="slider_container">
+		<div class="slider_image slider_image_2"></div>
+		<div class="slider_description">
+			<p class="surname">Hulk</p>
+			<p class="name">Bruce</p>
+			<p class="second_name">Benner</p>
+			<p class="role">dd</p>
+			<p class="experience">Experience:20 years</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_3"></div>
+		<div class="slider_description">
+			<p class="surname">Iron Man</p>
+			<p class="name">Anthony</p>
+			<p class="second_name">Stark</p>
+			<p class="role">billioner</p>
+			<p class="experience">Experience: since he born</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_4"></div>
+		<div class="slider_description">
+			<p class="surname">Capitan</p>
+			<p class="name">America</p>
+			<p class="second_name">The Ice Cube</p>
+			<p class="role">main dd</p>
+			<p class="experience">100 years</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_5"></div>
+		<div class="slider_description">
+			<p class="surname">Locky</p>
+			<p class="name">Locky</p>
+			<p class="second_name">Odinson</p>
+			<p class="role">The God of Lie</p>
+			<p class="experience">Experience: 1000 years</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_6"></div>
+		<div class="slider_description">
+			<p class="surname">Spiderman</p>
+			<p class="name">Peter</p>
+			<p class="second_name">Parker</p>
+			<p class="role">teenager</p>
+			<p class="experience">Experience: 5 years</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_7"></div>
+		<div class="slider_description">
+			<p class="surname">Dr.Strange</p>
+			<p class="name">Stephen</p>
+			<p class="second_name">Strange</p>
+			<p class="role">magician</p>
+			<p class="experience">Experience: 10 years</p>
+		</div>
+	</div>
+
+	<div class="slider_container">
+		<div class="slider_image slider_image_8"></div>
+		<div class="slider_description">
+			<p class="surname">Thor</p>
+			<p class="name">Thor</p>
+			<p class="second_name">Odinson</p>
+			<p class="role">The God of Thunder</p>
+			<p class="experience">Experience:1000 years</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
 <div class = "map">
 	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba1b6fc116d5b97d3483b3c308d665fe2ea233def98ed28a9ccf9625838fc361&amp;width=100%25&amp;height=501&amp;lang=ru_RU&amp;scroll=true"></script>
 </div>
+<div class="layput_aboutus">
+	<div class="layout_container">
+		<h4 class="aboutus_title">О&nbsp;нашем центре</h4>
+		<p class="aboutus_subtitle">Мы&nbsp;создали пространство, в&nbsp;котором каждый ребёнок проявляет и&nbsp;раскрывает себя, развивает индивидуальные особенности и&nbsp;таланты.</p>
+		<p class="aboutus_aim">Наша задача&nbsp;&mdash; сделать так, чтобы каждый день в&nbsp;Kids story был счастливым.</p>
+		<ul class="aboutus_list">
+			<li>Английский детский клуб. Для детей с&nbsp;2&nbsp;до&nbsp;7&nbsp;лет. Погружение в&nbsp;языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
+			<li>Дополнительные услуги. Для детей с&nbsp;2&nbsp;до&nbsp;18&nbsp;лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
+			<li>Kids story&nbsp;&mdash; &laquo;ежедневное развитие детей на&nbsp;360&nbsp;градусов&raquo;.</li>
+		</ul>
+</div>
+
 <script src="./index.js"></script>
 </body>
 

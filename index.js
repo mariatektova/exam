@@ -72,4 +72,78 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     initSlider("#mainSlider");
+
+
+		const slider = document.querySelector(".teamSlider");
+		const sliderContainer = slider.querySelectorAll(".slider_container");
+		slider.innerHTML = null;
+		let currentSlide = 0;
+		const slideItemsCount = 4;
+		const slidesCount = Math.ceil(sliderContainer.length / slideItemsCount);
+
+		const slideInner = document.createElement("div");
+		slideInner.classList.add("slide_inner");
+
+		const getSlideIndex = function(index) {
+			if (index < 0) return slidesCount - 1;
+			if (index > slidesCount - 1) return 0;
+			return index;
+		}
+
+		const drawSlide = function(index, side = 1) {
+			const div = document.createElement("div");
+
+			for (let i = index * slideItemsCount; i < (index + 1) * slideItemsCount; i++) {
+				div.append(sliderContainer[i]);
+			}
+
+			if (side > 0) {
+				slideInner.append(div);
+			} else {
+				slideInner.prepend(div);
+			}
+		}
+
+		const slideLeft = function() {
+			slider.classList.add("sliding_left");
+			currentSlide = getSlideIndex(currentSlide + 1);
+			drawSlide(currentSlide, 1);
+			window.setTimeout(function() {
+				slider.classList.remove("sliding_left");
+				slideInner.innerHTML = null;
+				drawSlide(currentSlide, 1);
+			}, 600);
+		}
+
+		const slideRight = function() {
+			slider.classList.add("sliding_right");
+			currentSlide = getSlideIndex(currentSlide - 1);
+			drawSlide(currentSlide, -1);
+			window.setTimeout(function(){
+				slider.classList.remove("sliding_right");
+				slideInner.innerHTML = null;
+				drawSlide(currentSlide, -1);
+			}, 600);
+		}
+
+		const prevButton = document.createElement("button");
+		prevButton.innerHTML = "назад";
+		prevButton.classList.add("prev_btn");
+		slider.appendChild(prevButton);
+		prevButton.addEventListener("click", slideRight);
+
+		const slideWrap = document.createElement("div");
+		slideWrap.classList.add("slide_wrap");
+		slider.appendChild(slideWrap);
+
+		slideWrap.appendChild(slideInner);
+
+		const nextButton = document.createElement("button");
+		nextButton.innerHTML = "вперед";
+		nextButton.classList.add("next_btn");
+		slider.appendChild(nextButton);
+		nextButton.addEventListener("click", slideLeft);
+
+		drawSlide(currentSlide);
+	
 });

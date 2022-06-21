@@ -17,12 +17,13 @@
 			font-weight: 500;
 			font-style: normal;
 		}
+
 		body {
-				height: 100vh;
-				margin: 0;
-				display: flex;
-				flex-direction: column;
-				font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+			height: 100vh;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
 		}
 		*,
 		*::before,
@@ -31,7 +32,7 @@
 		}
 
 .layout_container{
-	max-width:1600px;
+	max-width:1500px;
 	margin: 0 auto;
 }
 
@@ -39,6 +40,7 @@
 	display: flex;
 	flex-direction: row;
 	padding: 17px 14px 0 940px;
+
 }
 
 .header_placement__link{
@@ -151,22 +153,20 @@
 	margin: 0 auto;
 }
 .layout_main{
-	background-color:#FDDC4E;
 	border-radius: 20px;
-	background-repeat:no-repeat;
+	background: no-repeat 0 0 url("./vector1.svg"), no-repeat -19px 363px url("./vector2.svg"), no-repeat 466px 340px url("./dots.svg"),no-repeat 568px -78px url("./children.png"), no-repeat 1206px -4px url("./vector3.svg");
 	margin: 0 58px 0 58px;
+	background-color:#FDDC4E;
 }
 
 .main_adv__inf{
-	margin: 0;
+	margin: 176px 0 0 193px;
 	display: flex;
 	flex-direction: column;
-	padding:176px 240px;
 	position: relative;
 }
 
 .main_adv__title{
-	padding-right: 240px;
 	font-weight: 700;
 	font-size: 96px;
 	line-height: 117px;
@@ -194,6 +194,7 @@
 }
 .adv_form__title{
 	margin: 0;
+	padding-bottom: 9px;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 39px;
@@ -202,6 +203,7 @@
 
 .adv_form_subtitle{
 	margin: 0;
+	margin-bottom: 33px;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 17px;
@@ -212,8 +214,8 @@
 	border:none;
 	background: #FFFFFF;
 	border-radius: 50px;
-	margin: 6px;
-	padding: 20px 14px;
+	margin: 9px;
+	padding: 14px 20px;
 }
 
 .adv_form__button{
@@ -231,6 +233,7 @@
 }
 
 /*Info*/
+
 .info_placement{
 	margin-top: 102px;
 	display:grid;
@@ -238,6 +241,7 @@
 	grid-gap:81px;
 	list-style-type: none;
 	list-style-position: outside;
+	padding:0;
 }
 
 .info_group{
@@ -260,7 +264,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./hours.png");
 	background-repeat: no-repeat;
@@ -276,7 +280,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./watching.png");
 	background-repeat: no-repeat;
@@ -292,7 +296,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./groups.png");
 	background-repeat: no-repeat;
@@ -308,7 +312,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./envire.png");
 	background-repeat: no-repeat;
@@ -324,7 +328,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./medicine.png");
 	background-repeat: no-repeat;
@@ -340,7 +344,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./walking.png");
 	background-repeat: no-repeat;
@@ -356,7 +360,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./place.png");
 	background-repeat: no-repeat;
@@ -372,7 +376,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./age.png");
 	background-repeat: no-repeat;
@@ -388,7 +392,7 @@
 	content: "";
 	width: 100%;
 	height: 76px;
-	right: 10px;
+	right: 5px;
 	position: absolute;
 	background-image: url("./eating.png");
 	background-repeat: no-repeat;
@@ -400,12 +404,28 @@
 	background-color: #8081BD;
 	border-radius: 20px;
 	background-repeat:no-repeat;
-	height: 530px;
+	height:396px;
 	margin: 53px 58px 0 58px;
-}
 
+}
+.layout_consult__before{
+margin-top: 50px;
+	position:relative;
+}
+.layout_consult__before::before{
+	content: "";
+	width: 700px;
+	height: 507px;
+	left: 1025px;
+	position: absolute;
+	background-image: url("./boy2.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+
+}
 .consult_container{
 	padding: 48px 0 93px 193px;
+
 }
 
 .consult_info{
@@ -425,6 +445,7 @@
 	font-size: 20px;
 	line-height: 24px;
 	color: #FFFFFF;
+	margin: 31px 0 31px 0;
 }
 
 .consult_input{
@@ -478,6 +499,8 @@
 	font-size: 16px;
 	line-height: 20px;
 	color: #334155;
+	margin-left: -20px;
+	padding: 0;
 }
 
 .services_grid{
@@ -767,6 +790,7 @@
 	    background-color: #EA5D4A;
 	}
 	/*Benefits*/
+
 .benefits_title{
 margin: 0;
 font-weight: 700;
@@ -789,6 +813,10 @@ color: #334155;
 	grid-gap:77px;
 	list-style-type: none;
 	list-style-position: outside;
+	align-items: center;
+	padding: 0;
+	margin-left: 10px;
+
 }
 .benefits_list{
 	font-weight: 500;
@@ -892,10 +920,42 @@ background-position: 0% 50%;
 .layout_inner{
 display: flex;
 flex-wrap: wrap;
-
-
-
 }
+
+
+.aboutus_title{
+	margin: 83px 0 24px 0;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	display: flex;
+	align-items: center;
+	color: #8081BD;
+}
+.aboutus_subtitle{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #334155;
+	margin: 0 0 41px 0;
+}
+.aboutus_aim{
+	margin: 0 0 18px 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #EA5D4A;
+}
+.aboutus_list{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #334155;
+	margin: 0 0 100px 0;
+}
+/*Footer*/
+
+
 .footer_phone_logo{
 	width:192px;
 	height:52px;
@@ -990,4 +1050,185 @@ backdrop-filter: blur(30px);
 	max-width: 80%;
 	max-height: 80%;
 
+}
+
+/*SliderTeacher*/
+
+@keyframes slideLeft {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: -1228px;
+	}
+}
+
+@keyframes slideRight {
+	from {
+		margin-left: -1228px;
+	}
+	to {
+		margin-left: 0;
+	}
+}
+.command_slider{
+	margin: 40px 0 40px 0;
+	width: 100%;
+	height: 100%;
+}
+.command_title{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: #8081BD;
+}
+
+.teamSlider {
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-left: -65px;
+}
+
+.slide_wrap {
+	display: flex;
+	overflow: hidden;
+	width: 1228px;
+	margin: 0 35px;
+	position: relative;
+}
+
+.slide_inner,
+.slide_inner > div {
+	display: flex;
+}
+
+.slider_container {
+	width: 283px;
+	height: 405px;
+	margin-right: 32px;
+	margin-left: 0;
+}
+
+.slider_container:last-child{
+	margin-right: 0;
+}
+
+.slider_image {
+	width:283px;
+	height:278px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
+.slider_image_1 {
+	background-image: url("./deadpool.jpg");
+}
+
+.slider_image_2 {
+	background-image: url("./hulk.jpg");
+}
+
+.slider_image_3 {
+	background-image: url("./ironman.jpg");
+}
+
+.slider_image_5 {
+	background-image: url("./locky.jpg");
+}
+
+.slider_image_4 {
+	background-image: url("./cap.jpg");
+}
+
+.slider_image_6 {
+	background-image: url("./spider.jpg");
+}
+
+.slider_image_7 {
+	background-image: url("./strange.jpg");
+}
+
+.slider_image_8 {
+	background-image: url("./thor.jpg");
+}
+
+.slider_description{
+	margin: 28px 42px 0 4px;
+}
+
+.surname{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #8081BD;
+	margin: 0;
+}
+
+.name{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #334155;
+	margin:0;
+}
+
+.second_name{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #334155;
+	margin: 0;
+}
+
+.role{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #334155;
+	margin: 0;
+}
+
+.experience{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #334155;
+	margin: 0;
+}
+
+.prev_btn,
+.next_btn {
+	margin-top: 115px;
+	border:none;
+	background-color: #FFFF;
+	font-size: 0;
+	padding: 0;
+	width:60px;
+	height:60px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	background-image: url("./pre_btn.png");
+}
+
+.prev_btn {
+	transform: rotate(180deg);
+}
+
+.sliding_left .slide_inner {
+	animation-name: slideLeft;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.sliding_right .slide_inner {
+	animation-name: slideRight;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
